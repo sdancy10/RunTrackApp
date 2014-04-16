@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/verticalRunDetailScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <RelativeLayout
+            android:id="@+id/verticalRunDetailLayoutView"
+            android:layout_width="match_parent"
+            android:layout_height="446dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/RunTitle"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dp"
+                android:text="Title of Run"
+                android:textSize="@dimen/TitleTextSize" />
+
+            <TextView
+                android:id="@+id/distanceLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@+id/RunDistance"
+                android:text="Distance:"
+                android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/timeLabel"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/RunTime"
+                android:layout_alignParentLeft="true"
+                android:text="Time:"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/dateLabel"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/RunDate"
+                android:layout_alignRight="@+id/timeLabel"
+                android:text="Date:"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/RunDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/RunTitle"
+                android:layout_below="@+id/RunTitle"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="23dp"
+                android:text="99.9999" />
+
+            <TextView
+                android:id="@+id/RunDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/RunTime"
+                android:layout_below="@+id/RunTime"
+                android:layout_marginTop="34dp"
+                android:text="99/99/9999" />
+
+            <TextView
+                android:id="@+id/RunTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/RunDistance"
+                android:layout_below="@+id/distanceLabel"
+                android:layout_marginTop="32dp"
+                android:text="99:99:99" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>
