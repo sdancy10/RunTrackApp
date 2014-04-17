@@ -1,6 +1,7 @@
 package com.style.runtrackapp;
 
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
@@ -23,14 +24,16 @@ public class ViewAddRun extends Activity {
 		TextView m_AddRunsBTN = (TextView) this.findViewById(R.id.addRunDetailBTN);
 		m_AddRunsBTN.setOnClickListener(new View.OnClickListener() {
 		    public void onClick(View v) {	
-		    	PrintWriter out = null;     
+		    	PrintWriter out = null;
+                File file = null;
 		        FileOutputStream fos = null;
 		        try {
 		        	
-		        	fos = openFileOutput(m_ctxt.getResources().getResourceName(R.raw.runninglog), Context.MODE_APPEND);
+		        	fos = openFileOutput("runningLog", Context.MODE_APPEND);
+
 		        	out = new PrintWriter(new BufferedWriter(
 		                              new OutputStreamWriter(fos, "UTF-8")));        
-		            out.println("test");
+		            out.println("Run 999 - 09/09/09 - 4.589 - 00:00:00/n");
 
 		            out.flush();
 		            out.close();

@@ -22,7 +22,7 @@ public class ViewRunGraph extends Activity {
 		setContentView(R.layout.graph_layout_view);
 		
 		
-		//getDistanceVsTime();
+		getDistanceVsTime();
 		
 	}
 
