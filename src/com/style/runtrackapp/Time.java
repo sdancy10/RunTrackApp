@@ -38,8 +38,26 @@ public class Time {
 			totalhour++;
 			totalmin = (totalmin % 60);
 		}
-		
-		totalTime = totalhour+":"+totalmin+":"+totalsec;
+		String sHour,sMin,sSec;
+        if(totalhour < 10) {
+            sHour = "0" + totalhour;
+        }
+        else {
+            sHour = "" + totalhour;
+        }
+        if(totalmin < 10) {
+            sMin = "0" + totalmin;
+        }
+        else {
+            sMin = "" + totalmin;
+        }
+        if(totalsec < 10) {
+            sSec = "0" + totalsec;
+        }
+        else {
+            sSec = "" + totalsec;
+        }
+		totalTime = sHour+":"+sMin+":"+sSec;
 		return totalTime;
 	}
 

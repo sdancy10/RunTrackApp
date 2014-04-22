@@ -15,7 +15,8 @@
         android:layout_below="@+id/addRunBTN"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="28dp"
-        android:text="View Graph" />
+        android:background="@drawable/view_graph_btn"
+        android:singleLine="false" />
 
     <Button
         android:id="@+id/viewAllRunsBTN"
@@ -24,7 +25,7 @@
         android:layout_above="@+id/viewGraphBTN"
         android:layout_alignParentRight="true"
         android:layout_marginRight="32dp"
-        android:text="View Runs" />
+        android:background="@drawable/view_runs_btn" />
 
     <Button
         android:id="@+id/addRunBTN"
@@ -34,6 +35,6 @@
         android:layout_marginRight="22dp"
         android:layout_marginTop="33dp"
         android:layout_toLeftOf="@+id/viewAllRunsBTN"
-        android:text="Add Run" />
+        android:background="@drawable/add_runs_btn" />
 
 </RelativeLayout>
