@@ -18,7 +18,7 @@ public class ViewAllRuns extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		IrunInterpreter test = new runInterpreter("runninglog");		
-		final Runs testRuns = new Runs(test.getRunsAndroid(this));
+		Runs testRuns = new Runs(test.getRunsAndroid(this));
 
 		setContentView(R.layout.activity_all_runs_view);
 		LinearLayout m_vwVerticalLayout = (LinearLayout) this.findViewById(R.id.verticalRunLayoutView);
